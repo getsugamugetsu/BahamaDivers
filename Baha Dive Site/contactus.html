@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+<html>
+<head>
+<title> Contact Us </title>
+<style type="text/css">
+body {background-image: url("backgrounds/BG Lion Fish.jpg");
+	background-color: #DCDCDC;
+	font-family: Century Gothic;
+	font-size: 12px;
+	color:#FFFFFF
+	}
+input, select, textarea {
+	border: 1px solid #0000FF;
+	background-color: #FFFFFF;
+	clear: both;}
+textarea {
+	overflow: auto;
+	padding: 5px;}
+input#submit {
+	color: #000000;
+	font-weight: bold;}
+label {
+	padding-top: 10px;
+	display: block;
+	font-weight: bold;
+	color: #FFFFFF
+	}
+legend {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #00FFFF;
+	}
+fieldset {
+	border-width: 1px 0px 0px 0px;
+	border-style: solid none none none;
+	border-color: #FFFFFF;
+	margin-bottom: 10px;
+	}
+	
+h1 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #FFD700;
+	}
+	
+</style>
+</head>
+<body>
+<h1>Have Questions, Were Happy to Answer!!</h1>
+<p>You can use this form to ask us questions that were not answered already.
+You are required to enter your name and email address, in case the person you're writing would like to reply. 
+Enter your phone number if you want the person to respond by phone.</p>
+
+<form>
+<fieldset>
+<legend>Your Contact Information</legend>
+<label for="author">Your Name: </label><input type="text" size="25" name="author" />
+<label for="email">Your E-mail: </label><input type="text" size="25" name="email" />
+<label for="phone">Your Phone: </label><input type="text" size="25" name="phone" />
+</fieldset>
+<fieldset>
+<legend>Your Message</legend>
+<label for="who">Who is this message for?</label>
+<select name="who">
+<option value="">Please Select</option>
+<option value="Camper:">Manager:</option>
+<option value="Counselor:">Customer Support:</option>
+<option value="Senior Staff:">Tour Instructor:</option>
+</select> <input type="text" size="25" name="recipient" />
+<label for="message">Your Message:</label>
+<textarea rows="10" cols="50" name="message"></textarea>
+</fieldset>
+<fieldset>
+<legend>Your Response</legend>
+<label for="response">Would you like a response?</label>
+<input type="radio" name="response" value="none" />No response necessary, just have fun!<br />
+<input type="radio" name="response" value="email" />E-mail me back, please<br />
+<input type="radio" name="response" value="phone" />Give me a call when you can<p></p>
+</fieldset>
+<input type="submit" name="submit" value="Send Message" />
+</form>
+</body>
+</html>
